@@ -1,6 +1,6 @@
 const Premium = () => {
   return (
-    <section className="w-full h-fit">
+    <section className="w-full h-fit font-poppins">
       <div className="container mx-auto px-4 xl:max-w-[1280px]">
         <div className="flex justify-start items-center my-10 px-4 py-2 rounded-full w-52 shadow-xl">
           <div>

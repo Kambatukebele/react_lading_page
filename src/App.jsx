@@ -3,6 +3,7 @@ import Premium from "./components/Premium";
 import Underhero from "./components/Underhero";
 import { SectionCard } from "./components/cards/SectionCard";
 import Communication from "./components/communication/Communication";
+
 function App() {
   return (
     <>
@@ -20,6 +21,7 @@ function App() {
       {/* END Cards */}
       {/* Communication */}
       <Communication />
+      <Communication reverse={1} />
       {/* END Communication */}
     </>
   );

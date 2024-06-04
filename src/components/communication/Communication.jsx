@@ -1,41 +1,131 @@
+import Image from "./Image";
 import H2text from "../H2text";
 import Ptext from "../Ptext";
-const Communication = () => {
+import iphone from "../../assets/iphone_x.png";
+const Communication = ({ reverse }) => {
   return (
-    <section className="w-full h-fit bg-gray-100">
-      <div className="container mx-auto px-4 py-10 xl:max-w-[1280px]">
-        {/* <image /> */}
-        <div>
+    <section
+      className={`w-full h-fit bg-gray-100 font-poppins ${
+        reverse ? "bg-white" : ""
+      }`}
+    >
+      <div
+        className={`container mx-auto px-4 py-10 flex justify-center items-center flex-col-reverse gap-10 lg:flex-row ${
+          reverse ? "lg:flex-row-reverse" : ""
+        } lg:justify-between lg:items-start lg:py-20 xl:max-w-[1280px]`}
+      >
+        <Image img={iphone} />
+        <div className="flex flex-col justify-center items-start gap-4 w-full lg:w-1/2">
           <H2text>Easily communicate with clients using sApp.</H2text>
           <Ptext>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique
             dolor ut iusto vitae autem neque eum ipsam.
           </Ptext>
-          <div className="flex justify-between items-center my-3">
-            <span className="block mr-2">
-              <svg
-                class="svg-inline--fa fa-check fa-w-16"
-                aria-hidden="true"
-                focusable="false"
-                data-prefix="fas"
-                data-icon="check"
-                role="img"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 512 512"
-                data-fa-i2svg=""
-                width="16"
-                color="rgba(81,45,213,0.9)"
-              >
-                <path
-                  fill="currentColor"
-                  d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"
-                ></path>
-              </svg>
-            </span>
-            <span className="block text-gray-500 text-start text-base leading-6 font-normal">
-              Combined with a handful of model sentence structures looks
-              reasonable.
-            </span>
+          <div>
+            <div className="flex justify-start items-center gap-2 my-3">
+              <span className="block">
+                <svg
+                  class="svg-inline--fa fa-check fa-w-16"
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fas"
+                  data-icon="check"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                  data-fa-i2svg=""
+                  width="16"
+                  color="rgba(81,45,213,0.9)"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"
+                  ></path>
+                </svg>
+              </span>
+              <span className="block text-gray-500 text-start text-base leading-6 font-normal">
+                Combined with a handful of model sentence structures looks
+                reasonable.
+              </span>
+            </div>
+            <div className="flex justify-start items-center gap-2 my-3">
+              <span className="block">
+                <svg
+                  class="svg-inline--fa fa-check fa-w-16"
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fas"
+                  data-icon="check"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                  data-fa-i2svg=""
+                  width="16"
+                  color="rgba(81,45,213,0.9)"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"
+                  ></path>
+                </svg>
+              </span>
+              <span className="block text-gray-500 text-start text-base leading-6 font-normal">
+                Combined with a handful of model sentence structures looks
+                reasonable.
+              </span>
+            </div>
+            <div className="flex justify-start items-center gap-2 my-3">
+              <span className="block">
+                <svg
+                  class="svg-inline--fa fa-check fa-w-16"
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fas"
+                  data-icon="check"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                  data-fa-i2svg=""
+                  width="16"
+                  color="rgba(81,45,213,0.9)"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"
+                  ></path>
+                </svg>
+              </span>
+              <span className="block text-gray-500 text-start text-base leading-6 font-normal">
+                Combined with a handful of model sentence structures looks
+                reasonable.
+              </span>
+            </div>
+            <div className="flex justify-start items-center gap-2 my-3">
+              <span className="block">
+                <svg
+                  class="svg-inline--fa fa-check fa-w-16"
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fas"
+                  data-icon="check"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                  data-fa-i2svg=""
+                  width="16"
+                  color="rgba(81,45,213,0.9)"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"
+                  ></path>
+                </svg>
+              </span>
+              <span className="block text-gray-500 text-start text-base leading-6 font-normal">
+                Combined with a handful of model sentence structures looks
+                reasonable.
+              </span>
+            </div>
           </div>
           <div className="flex justify-start items-center gap-3 my-3">
             <div className="w-14 h-14 border flex justify-center item-center rounded-sm bg-white shadow-lg">
